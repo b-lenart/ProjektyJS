@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="canvas1" width="700" height="500"></canvas>
+    <div id="btn-container">
+        <button class="img-btn" id="run4">Negatyw</button>
+        <p>Jasność</p>
+        <div id="jCont" class="cont">
+            <input type="range" class="inp-btn" id="jasnoscid" name="jasnosc" min="0" max="10" value="0" step="1" />
+            <div id="jAfter" class="dot"></div>
+        </div>
+        <p>Nasycenie</p>
+        <div id="nCont" class="cont">
+            <input type="range" class="inp-btn" id="nasycenieid" name="nasycenie" min="0" max="10" value="0" step="1" />
+            <div id="nAfter" class="dot"></div>
+        </div>
+        <p>Kontrast</p>
+        <div id="kCont" class="cont">
+            <input type="range" class="inp-btn" id="kontrastid" name="kontrast" min="0" max="10" value="0" step="1" />
+            <div id="kAfter" class="dot"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

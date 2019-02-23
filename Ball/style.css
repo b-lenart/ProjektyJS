@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.plansza{
+    background-color: #009688;
+    position: relative;
+    width: 320px;
+    height: 500px;
+    margin: 45px auto 0;
+}
+
+#ball {
+    width: 10px;
+    height: 10px;
+    background: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 1s all;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+#hole1 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: black;
+    top: 50px;
+    left: 150px;
+}
+
+#hole1::after {
+    content: 'target';
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: -18px;
+    color: #fff;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+}
+
+#trap1 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: rgb(97, 22, 22);
+    top: 100px;
+    left: 150px;
+}
+
+.startgame-cont {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(37, 37, 37, 0.575);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    flex-direction: column;
+}
+
+#start-game {
+    font-size: 1.5rem;
+    padding: 10px 50px;
+    border: none;
+    background: white;
+    border-radius: 5px;
+}
+
+.startgame-cont div {
+    margin-top: 25px;
+    font-size: 1.2rem;
+    color: #fff;
+}

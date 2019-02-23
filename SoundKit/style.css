@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-weight: 300;
+    text-align: center;
+}
+.sounds-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.circle-sound {
+    width: 85px;
+    height: 85px;
+    border: 3px solid #383838;
+    border-radius: 50%;
+    line-height: 85px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 300;
+}
+
+.anim {
+    animation-name: anim1;
+    animation-duration: 0.2s;
+    /* animation-fill-mode: forwards; */
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes anim1 {
+    0% {
+        background: #fff;
+        transform: scale(1);
+    }
+
+    50% {
+        background: rgb(29, 135, 184);
+        transform: scale(1.2);
+    }
+
+    100% {
+        background: #fff;
+        transform: scale(1);
+    }
+}
+
+.playrec {
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    border: 4px solid #F44336;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: 0.7s all;
+    color: #555;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playrec:hover {
+    color: #fff;
+}
+
+#rec {
+    border: 4px solid #F44336;
+}
+
+#rec:hover {
+    background: #F44336;
+}
+
+#play {
+    border: 4px solid rgb(54, 120, 244);
+}
+
+#play:hover {
+    background: rgb(54, 120, 244);
+}
+
+audio {
+    visibility: hidden;
+    height: 20px;
+}
+
+.play-rec-cont {
+    margin: 75px auto 0 auto;
+    width: 290px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.track {
+    width: 80px;
+    height: 80px;
+    background: rgb(201, 49, 49);
+    border-radius: 50%;
+    color: white;
+    line-height: 80px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.playTrack {
+    width: 80px;
+    height: 80px;
+    background: rgb(70, 113, 194);
+    border-radius: 50%;
+    color: white;
+    line-height: 80px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: 0.5s all;
+}
+
+.reset-btn {
+    background: rgb(181, 181, 181);
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: 0.7s all;
+    color: #fff;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s all;
+}
+
+.track:hover, .playTrack:hover, .reset-btn:hover {
+    opacity: 0.8;
+}
+
+.track-cont {
+    display: flex;
+    margin-top: 20px;
+}
+
+#tracks {
+    padding-left: 20px;
+}
+
+#tracks p {
+    font-weight: bold;
+    padding-left: 11px;
+}
+
+div#playAll {
+    margin: 10px 0 0 20px;
+    background: #8BC34A;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 2rem;
+}
+
+.play-all-text {
+    font-weight: bold;
+    padding-left: 30px;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
